@@ -24,5 +24,6 @@ fields:
     required: false
   label: permalink
 pages:
+- docs/amazing-doc.md
 - docs/configuration/configuration.md
 - docs/navigation-structure.md
