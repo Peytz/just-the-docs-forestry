@@ -25,5 +25,6 @@ fields:
   label: permalink
 pages:
 - docs/amazing-doc.md
+- docs/asd.md
 - docs/configuration/configuration.md
 - docs/navigation-structure.md
