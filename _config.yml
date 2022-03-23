@@ -35,6 +35,7 @@ ga_tracking: #UA-2709176-10
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-admin
 
 compress_html:
   clippings: all
