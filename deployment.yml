@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: just-the-docs-forestry
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: just-the-docs-forestry
+  template:
+    metadata:
+      labels:
+        app: just-the-docs-forestry
+    spec:
+      containers:
+      - name: website
+        image: vesoch/just-the-docs-forestry:1.0.0
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: just-the-docs-forestry
+spec:
+  selector:
+    app: just-the-docs-forestry
+  ports:
+  - protocol: TCP
+    port: 80
+  type: LoadBalancer
