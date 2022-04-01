@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: website
-        image: vesoch/just-the-docs-forestry:1.0.0
+        image: europe-central2-docker.pkg/absolute-keel-345710/just-the-docs-forestry/just-the-docs-forestry:v1
         ports:
         - containerPort: 80
 ---
